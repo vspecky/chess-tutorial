@@ -1,11 +1,11 @@
 # Part 1: Rendering the GUI
 In this part we will learn how we can create a GUI for our game using the ggez crate. We will start
 with a blank slate :-
-<p>
+<p align="center">
     <img height="400" src="../imgs/blank_slate.png">
 </p>
 And gradually build it up to a decent looking GUI, complete with pieces :-
-<p>
+<p align="center">
     <img height="400" src="../imgs/gui.png">
 </p>
 
