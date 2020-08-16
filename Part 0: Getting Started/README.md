@@ -1,5 +1,5 @@
 # Part 0: Getting Started
-## 0.1: Initializing the Project
+## 0.1 Initializing the Project
 Like all Rust projects, we will initialize this project using `cargo`, Rust's package manager. if you
 don't have Rust installed yet, you can install it from the [Official Website](https://www.rust-lang.org/tools/install).
 If you have Rust installed then you're all set.
@@ -28,7 +28,7 @@ fn main() {
 You can type in the command `cargo run` and Cargo will compile and run your project, displaying the
 Hello World message in the Terminal/Cmd.
 
-## 0.2: Adding Dependencies
+## 0.2 Adding Dependencies
 We will be using the `ggez` crate to implement the GUI of our game. ggez is a popular Rust library 
 for making 2D games and is based upon the LOVE Framework. You can check out the official website [here](https://ggez.rs/).
 To add ggez as a dependency, simple add the line `ggez = "0.5"` under `[dependencies]` in your
