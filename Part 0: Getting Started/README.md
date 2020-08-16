@@ -43,4 +43,18 @@ Check out [this page](https://github.com/ggez/ggez/blob/master/docs/BuildingForE
 <br>
 <br>
 Once you've done all that, congratulations, you are now ready to start implementing your very own
-chess game! You can now move on to Part 1.
+chess game! We can now move on to Rendering the GUI.
+
+## 0.3 Committing our Changes
+But wait! remember that Cargo provided us with a git repository when we initialized the project.
+Lets make use of it! If you're not familiar with Git, there are a ton of tutorials out there which
+explain how to use it better than I ever can. [Here's one by Traversy Media](https://www.youtube.com/watch?v=SWYqp7iY_Tc).
+<br>
+For our Initial Commit lets add everything :-
+```
+git add .
+```
+And make our very first commit :-
+```
+git commit -m "Initialized project and added dependencies (Or any other message you want)"
+```
