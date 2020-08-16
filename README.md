@@ -8,7 +8,7 @@ In this series of.. uhh idk what to call it.. Readmes? Anyways, in this series w
 to implement Chess in the best programming language in the world, which is Rust!
 <br>
 The final product will look like something along the lines of this :-
-<p>
+<p align="center">
     <img height="400" src="imgs/final.png">
 </p>
 
