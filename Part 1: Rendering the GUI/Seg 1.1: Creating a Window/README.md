@@ -33,7 +33,9 @@ use ggez::Context;
 ```
 ###### `GameResult` is an enum type similar to `Result` that is returned by most functions in ggez and `Context` is a type that contains the context of the current ggez instance.
 Next, we create a `impl` block for the trait on our main struct. For now, we will add the required
-trait methods without implementing the logic.
+trait methods without implementing the logic. These are the `draw` and `update` methods. We won't be
+using the `update` method at all in this tutorial but it still needs to be there cuz it's required.
+Poor `update` method :(
 ```rust
 impl event::EventHandler for Game {
     fn update(&mut self, _ctx: &mut Context) -> GameResult<()> {
