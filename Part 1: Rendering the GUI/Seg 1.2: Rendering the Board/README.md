@@ -181,8 +181,6 @@ Rendering the board is basically a 3 step process :-
     - Present the new screen
 
 
-<br>
-<br>
 And here's the code for that:  
 <br>
 ```rust
