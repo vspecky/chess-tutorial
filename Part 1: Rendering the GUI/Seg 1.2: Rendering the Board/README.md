@@ -137,7 +137,6 @@ Take a look at this chessboard.
 In particular, take a look at how the white squares are positioned. Try assigning a co-ordinate value
 to each white square. Remember, the indexing starts from 0 and the positioning starts from the top
 left. On assigning a co-ordinate value to each white square, we get a pattern like so:  
-```
 (0,0)     (0,2)     (0,4)     (0,6)
 
      (1,1)     (1,3)     (1,5)     (1,7)
@@ -153,7 +152,6 @@ left. On assigning a co-ordinate value to each white square, we get a pattern li
 (6,0)     (6,2)     (6,4)     (6,6)
 
      (7,1)     (7,3)     (7,5)     (7,7)
-```  
 Notice anything yet? If you did then that's great!
 <br>
 From the co-ordinate diagram it is clear that a square is white if and only if its x and y
