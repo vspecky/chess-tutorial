@@ -61,7 +61,7 @@ three main advantages to this:
 2. In subsequent parts, we will implement square highlighting for piece moves, which would be trivial
 with a board representation like this.
 3. It's overall much simpler to understand (as is intended by this tutorial).  
-[//]: # (Obligatory comment to end the list)
+<a/>
 <br>
 For this, lets start by bringing the required types into scope:  
 ```rust
