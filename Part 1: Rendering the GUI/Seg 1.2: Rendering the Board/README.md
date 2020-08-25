@@ -137,7 +137,8 @@ Take a look at this chessboard.
 In particular, take a look at how the white squares are positioned. Try assigning a co-ordinate value
 to each white square. Remember, the indexing starts from 0 and the positioning starts from the top
 left. On assigning a co-ordinate value to each white square, we get a pattern like so:  
-<br>
+<br>  
+
      (0,0)     (0,2)     (0,4)     (0,6)
 
           (1,1)     (1,3)     (1,5)     (1,7)
