@@ -60,7 +60,7 @@ three main advantages to this:
 1. Rendering becomes easier since all we have to do is 2D iteration while rendering.
 2. In subsequent parts, we will implement square highlighting for piece moves, which would be trivial
 with a board representation like this.
-3. It's overall much simpler to understand (as is intended by this tutorial).
+3. It's overall much simpler to understand (as is intended by this tutorial).  
 <br>
 For this, lets start by bringing the required types into scope:  
 ```rust
