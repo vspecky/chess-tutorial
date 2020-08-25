@@ -239,7 +239,7 @@ We have the rendering of the board up and running but we have a small problem.
 Altho, rather than a problem, it's more like unnecessary overhead.
 <br>
 The thing is, the `draw` function in which we wrote the code for rendering the board is running
-continuously. That is, it is repeatedly refreashing the screen and re-rendering the board. However
+continuously. That is, it is repeatedly refreshing the screen and re-rendering the board. However
 we don't really need it to do that over and over again. It's perfectly fine for the rendering logic
 to run once and then wait for some input from the user before running again since the environment we have is static (if
 it was dynamic, we would be making use of the lonely `update` method).
