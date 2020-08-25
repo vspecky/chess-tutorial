@@ -176,7 +176,10 @@ use ggez::graphics::{self, Color, DrawMode, DrawParam, Mesh, Rect};
 Rendering the board is basically a 3 step process :-
 - Clear the Screen
 - Draw the board
-- Present the new screen
+- Present the new screen  
+
+
+
 <br>
 And here's the code for that:  
 ```rust
