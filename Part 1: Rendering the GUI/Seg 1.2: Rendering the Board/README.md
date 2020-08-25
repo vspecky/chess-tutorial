@@ -175,11 +175,10 @@ use ggez::graphics::{self, Color, DrawMode, DrawParam, Mesh, Rect};
 ```  
 
 Rendering the board is basically a 3 step process :-
-<ol>
-<li>Clear the Screen</li>
-<li>Draw the board</li>
-<li>Present the new screen</li>
-</ol>
+<br>
+    - Clear the Screen
+    - Draw the board
+    - Present the new screen
 
 
 <br>
