@@ -73,7 +73,7 @@ this if you want of course). Lets create a couple of constants for this:
 const WHITE_COLOR: u8 = 200;
 const BLACK_COLOR: u8 = 50;
 ```  
-###### We won't use 0 and 255 respectively since the pieces used in this implementation will be black and white, and we wouldn't want them to get camouflaged now would we?
+###### We won't use 0 and 255 respectively since the pieces used in this implementation will be black and white, and we wouldn't want them to get camouflaged now would we?  
 Lets add some fields to our main Struct:  
 ```rust
 struct Game {
