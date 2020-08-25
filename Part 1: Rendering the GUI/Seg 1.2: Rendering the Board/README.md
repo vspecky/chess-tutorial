@@ -62,26 +62,26 @@ three main advantages to this:
 with a board representation like this.
 3. It's overall much simpler to understand (as is intended by this tutorial).
 <br>
-For this, lets start by bringing the required types into scope:
+For this, lets start by bringing the required types into scope:  
 ```rust
 use ggez::graphics::Color;
-```
+```  
 The colors for black and white squares that we use in this implementation will just be two differing
 shades of Gray, which can be represented as a single Grayscale intensity value (You can change
-this if you want of course). Lets create a couple of constants for this:
+this if you want of course). Lets create a couple of constants for this:  
 ```rust
 const WHITE_COLOR: u8 = 200;
 const BLACK_COLOR: u8 = 50;
-```
+```  
 ###### We won't use 0 and 255 respectively since the pieces used in this implementation will be black and white, and we wouldn't want them to get camouflaged now would we?
-Lets add some fields to our main Struct:
+Lets add some fields to our main Struct:  
 ```rust
 struct Game {
     // This field will represent our chess board
     board: [[Color; 8]; 8],
 }
-```
-And modify the new method to reflect the change:
+```  
+And modify the new method to reflect the change:  
 ```rust
 impl Game {
     fn new() -> Self {
@@ -96,7 +96,7 @@ impl Game {
         }
     }
 }
-```
+```  
 aaaaaaand looks like we're done.
 <br>
 <br>
@@ -104,7 +104,7 @@ BUT WAIT! all we did was make all of the squares white. We need a checkerboard p
 look like an actual chessboard! so lets do that!
 <br>
 Now, we could write the logic for this in the `new` method. However, we might wanna reset the board
-quite a few times in the future, hence lets create a new method. We'll call this `reset_board`:
+quite a few times in the future, hence lets create a new method. We'll call this `reset_board`:  
 ```rust
 impl Game {
     // Stuff above
@@ -127,7 +127,7 @@ impl Game {
 
     // Stuff below
 }
-```
+```  
 And there we have it!  
 .  
 .  
@@ -140,7 +140,7 @@ Take a look at this chessboard.
 </p>
 In particular, take a look at how the white squares are positioned. Try assigning a co-ordinate value
 to each white square. Remember, the indexing starts from 0 and the positioning starts from the top
-left. On assigning a co-ordinate value to each white square, we get a pattern like so:
+left. On assigning a co-ordinate value to each white square, we get a pattern like so:  
 ```
 (0,0)     (0,2)     (0,4)     (0,6)
 
@@ -157,7 +157,7 @@ left. On assigning a co-ordinate value to each white square, we get a pattern li
 (6,0)     (6,2)     (6,4)     (6,6)
 
      (7,1)     (7,3)     (7,5)     (7,7)
-```
+```  
 Notice anything yet? If you did then that's great!
 <br>
 From the co-ordinate diagram it is clear that a square is white if and only if its x and y
@@ -171,17 +171,17 @@ At this point we are more than ready to render our beautiful chessboard. We will
 the `draw` method who's probably been lonely all this time, altho nothing compared to the poor
 `update` method :'( (Refer to `1.1.2` for context)
 <br>
-As always, we begin by bringing the required stuff into context:
+As always, we begin by bringing the required stuff into context:  
 ```rust
 // Yep, that's a lot.
 use ggez::graphics::{self, Color, DrawMode, DrawParam, Mesh, Rect};
-```
+```  
 Rendering the board is basically a 3 step process :-
 - Clear the Screen
 - Draw the board
 - Present the new screen
 <br>
-And here's the code for that:
+And here's the code for that:  
 ```rust
 impl EventHandler for Game {
     fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
@@ -228,7 +228,7 @@ impl EventHandler for Game {
         graphics::present(ctx)
     }
 }
-```
+```  
 And there we have it! Just do `cargo run` and enjoy the sight of your beautiful chessboard!
 <br>
 We are pretty much done here, altho there is something that needs to be addressed.
@@ -254,7 +254,7 @@ it back to false again once it's done with the rendering logic. This way, we can
 the variable to `true` whenever we want to refresh the screen. It will refresh the screen once and stop there.
 <br>
 <br>
-We begin by tweaking the struct and the `new` method:
+We begin by tweaking the struct and the `new` method:  
 ```rust
 struct Game {
     // Other fields
@@ -277,8 +277,8 @@ impl Game {
         }
     }
 }
-```
-And then we add the logic to the `draw` method:
+```  
+And then we add the logic to the `draw` method:  
 ```rust
 impl EventHandler for Game {
     fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
@@ -295,17 +295,17 @@ impl EventHandler for Game {
         graphics::present(ctx)
     }
 }
-```
+```  
 And done! Now the `draw` function won't be called over and over again for nothing.
 <br>
 <br>
 And that's about it! You're now ready to move to `Segment 1.3` and start rendering the pieces. See ya there!
 
 ## 1.2.5 Committing our Changes
-Come on, don't tell me you forgot again!
+Come on, don't tell me you forgot again!  
 <br>
 ```
 git add src/main.rs
 
 git commit -m "Added board rendering logic and optimized the drawing"
-```
+```  
