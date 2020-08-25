@@ -56,23 +56,7 @@ Now you can go ahead and `cargo run`. You'll notice that the window looks kind o
 ## 1.2.2 Coding the Board
 To render the board, we must have some representation of it. For our representation, we will use
 an `8x8` array `[[T; 8]; 8]` where `T` will be ggez's `Color` type which specifies a color. There's
-three main advantages to this:
-<ol>
-<li>Rendering becomes easier since all we have to do is 2D iteration while rendering.</li>
-<li>In subsequent parts, we will implement square highlighting for piece moves, which would be trivial
-with a board representation like this.</li>
-<li>It's overall much simpler to understand (as is intended by this tutorial).</li>
-</ol>
-
-
-
-
-<!-- -->
-
-
-
-
-
+advantages to this.
 <br>
 For this, lets start by bringing the required types into scope:  
 ```rust
