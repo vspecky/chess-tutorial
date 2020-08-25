@@ -63,6 +63,16 @@ three main advantages to this:
 with a board representation like this.</li>
 <li>It's overall much simpler to understand (as is intended by this tutorial).</li>
 </ol>
+
+
+
+
+<!-- -->
+
+
+
+
+
 <br>
 For this, lets start by bringing the required types into scope:  
 ```rust
