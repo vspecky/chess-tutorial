@@ -182,9 +182,10 @@ Rendering the board is basically a 3 step process :-
 </ol>
 
 
-
+<br>
 <br>
 And here's the code for that:  
+<br>
 ```rust
 impl EventHandler for Game {
     fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
